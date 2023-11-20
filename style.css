@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?familmargiy=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'roboto',sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+}
+main{
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+.only-mobile{
+    display: none;
+}
+.om{
+    display: none;
+}
+.side-bar{
+    height: 100%;
+    width: 17%;
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.left #menu{
+    padding: 0 7px;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+}
+.search form{
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+
+}
+.search input{
+    width: 600px;
+    padding: 10px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #ddd;
+}
+.search button{
+    height: 100%;
+    width: 60px;
+    border: none;
+}
+.mic{
+    margin-top: 10px;
+}
+.material-icons{
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: black;
+}
+.nav-link span{
+    margin-left: 15px;
+}
+.nav-link:hover{
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.active{
+    background: #e5e5e5;
+}
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
+.content{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+}
+.videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.video{
+    width: 23.6%;
+    height: 0%;
+}
+.thumbnail{
+    width: 100%;
+    height: 53%;
+}
+.thumbnail img{
+    object-fit: cover;
+    height: 115%;
+    width: 100%;
+}
+.author img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 10px;
+}
+.details{
+    display: flex;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title h3{
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+.title a,span{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 0.6rem;
+}
+
+@media (max-width:798px){
+    .side-bar{
+        display: none;
+    }
+    .ext{
+        display: none;
+    }
+}
+@media(max-width:996px){
+    .video{
+        width: 31.7%;
+        height: 0%;
+    }
+    .thumbnail{
+        width: 100%;
+        height: 53%;
+    }
+    .thumbnail img{
+        object-fit: cover;
+        height: 115%;
+        width: 100%;
+    }
+}
+@media(max-width:1097px){
+    .nav-link{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link span{
+        margin: 0;
+    }
+    .search input{
+        width: 17rem;
+    }
+}
+@media(max-width:660px){
+    .video{
+        width: 48%;
+    }
+    .search input{
+        width: 13rem;
+    }
+}
+@media(max-width:576px){
+    .ixt{
+        display: none;
+    }
+    .mm{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .om{
+        display: inherit;
+    }
+    .icons{
+        display: flex;
+    }
+    .header{
+        height: 50px;
+    }
+    .video{
+        width: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .only-mobile{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .tm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        height: 40px;
+    }
+    .tm:hover{
+        background: #e5e5e5;
+    }
+   
+}
